@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Iphone 11 pro max",
+        "price": 800,
+        "featured": false,
+        "company": "Apple"
+    },
+    {
+        "name": "Samsung S20 FE",
+        "price": 450,
+        "featured": true,
+        "company": "Samsung"
+    },
+    {
+        "name": "Iphone 15 pro max",
+        "price": 1190,
+        "featured": true,
+        "company": "Apple"
+    },
+    {
+        "name": "Redmi Note 13 5G",
+        "price": 350,
+        "featured": false,
+        "company": "Redmi"
+    },
+    {
+        "name": "Iphone 14 pro",
+        "price": 850,
+        "featured": true,
+        "company": "Apple"
+    },
+    {
+        "name": "Oneplus Nord CE3",
+        "price": 500,
+        "featured": true,
+        "company": "OnePlus"
+    },
+    {
+        "name": "Oneplus CE2 Lite",
+        "price": 385,
+        "featured": false,
+        "company": "OnePlus"
+    }
+]
