@@ -12,7 +12,7 @@
         "company": "Samsung"
     },
     {
-        "name": "Iphone 15 pro max",
+        "name": "Iphone15ProMax",
         "price": 1190,
         "featured": true,
         "company": "Apple"
@@ -24,13 +24,13 @@
         "company": "Redmi"
     },
     {
-        "name": "Iphone 14 pro",
+        "name": "Iphone14Pro",
         "price": 850,
         "featured": true,
         "company": "Apple"
     },
     {
-        "name": "Oneplus Nord CE3",
+        "name": "OneplusNord",
         "price": 500,
         "featured": true,
         "company": "OnePlus"

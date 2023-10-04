@@ -17,6 +17,7 @@ mongoose.connect(process.env.CONN_STR,{
 
 const importMovies=async ()=>{
     try{
+        await Product.deleteMany();//this will delete all the previous data in the DB and then create new ones which will look something like overwriting the data in the DB..
         await Product.create(movies);
         console.log("movies imported in database and document created!!")
     }
