@@ -2,11 +2,18 @@ const Product=require('../models/productModel');
 
 exports.getAllProducts=async(req,res)=>{
     try{
-        const {company}=req.query;
+        const {company,name,sort}=req.query;
         const queryObject={}
+
         if(company){
-            queryObject.company=company;
+            queryObject.company={$regex:company,$options:'i'};
         }
+
+        if(name){
+            queryObject.name={$regex:name,$options:'i'};
+        }
+        
+
     const allProducts=await Product.find(queryObject);
     res.status(200).json({
         Number:allProducts.length,
@@ -26,7 +33,18 @@ exports.getAllProducts=async(req,res)=>{
 
 exports.getTestingProducts=async(req,res)=>{
     try{
-        const allProducts=await Product.find({company:"Apple"});
+        const {company,name,sort}=req.query;
+        const queryObject={}
+        let apiData=Product.find(queryObject);
+        console.log(apiData)
+
+        if(sort){
+            const sortFixed=sort.replace(","," ")
+            apiData=apiData.sort(sortFixed)
+        }
+        console.log(apiData)
+
+        const allProducts=await apiData;
         res.status(200).json({
             status:"Success",
             data:allProducts
